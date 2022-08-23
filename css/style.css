@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  
+  nav {
+
+    background-color: #111;
+    width: 800px;
+    margin: auto;
+    font-family: arial;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    width: 196px;
+    text-align: ;
+  }
+  
+  nav ul li a {
+    color: white;
+    display: block;
+    padding: 15px 25px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  nav ul li a::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f00;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+  }
+  nav ul li:hover > a::after,
+  nav ul li:hover > a::before {
+    width: 100%;
+  }
+  
+  nav ul li ul {
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    position: absolute;
+    background-color: #555;
+    width: 200px;
+    transition: 0.5s;
+  }
+  
+  nav ul li:hover > ul {
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+  }
+  
+  nav ul li ul li {
+    display: block;
+  }
+  
+  nav ul li ul li a::before,
+  nav ul li ul li a::after {
+    display: none;
+  }
+  
+  nav ul li ul li:hover > a {
+    background-color: #111;
+  }
+  
+  nav ul li ul li ul {
+    left: 105%;
+    top: 0;
+    background-color: #777;
+  }
+  
+  .parent {
+    width: 800px;
+    height: 500px;
+    background-color: #ccc;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .child1,
+  .child2 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .child1 {
+    background-color: #f00;
+  }
+  .child2 {
+    background-color: #00f;
+  }
+  div h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding:50px;
+    background-color: rgb(136, 123, 247);
+    font-size:50px ;
+  }
+  .ppp{
+    padding: 30px;
+    font-size: 20px;
+    font-style: italic;
+  }
+ .opo h1{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 20px 20px;
+    background-color: #f00;
+ }
